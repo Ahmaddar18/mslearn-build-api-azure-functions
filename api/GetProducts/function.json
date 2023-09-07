@@ -5,8 +5,10 @@
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
-      "methods": ["delete"],
-      "route" : "product/{id}"
+      "methods": [
+        "get"
+      ],
+      "route": "products"
     },
     {
       "type": "http",
@@ -14,5 +16,5 @@
       "name": "res"
     }
   ],
-  "scriptFile": "../dist/DeleteProduct/index.js"
+  "scriptFile": "../dist/GetProducts/index.js"
 }
